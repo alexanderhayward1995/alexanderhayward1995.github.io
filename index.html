@@ -251,7 +251,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
   .hero{padding-top:6rem;min-height:auto;padding-bottom:3rem}
   .hero-c{grid-template-columns:1fr;text-align:center;gap:2.5rem}
   .hero-port{order:-1}.pf{width:200px;height:240px;margin:0 auto}
-  .hero-tl{margin:1.5rem auto 2.5rem}
+  .hero-tl{margin:1.5rem auto 2.5rem; line-height: 1.8;}
   .hero-acts{justify-content:center}
   .hero h1{font-size:2.8rem}
   .st{font-size:2.2rem}
@@ -267,6 +267,29 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
   .lb-prev{left:12px}.lb-next{right:12px}
   .back-top{bottom:1.5rem;right:1.5rem}
   .hero-ol::before{display:none}
+
+  /* --- MOBILE FIXES FOR COMPRESSED IMAGES & TEXT --- */
+  .pc {
+    aspect-ratio: 3/2; /* Makes gallery covers taller on phone so they aren't "squashed" */
+  }
+  .po {
+    padding: 1.25rem; /* Reduces padding so text doesn't get squeezed into a tiny column */
+  }
+  .pn {
+    font-size: 1.5rem; /* Scales down the title so it fits on one line */
+    margin-bottom: 0.2rem;
+  }
+  .pd {
+    font-size: 0.85rem; /* Scales down description text */
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .expand-hint {
+    margin-top: 0.5rem;
+    opacity: 1; /* Always show the "click to toggle" hint on mobile since there is no hover */
+    transform: translateY(0);
+  }
+  /* ------------------------------------------------ */
 }
 </style>
 </head>
@@ -1035,11 +1058,6 @@ function showLightboxImage() {
   lbCounter.style.display = showNav ? 'block' : 'none';
 }
 
-function closeLightbox() {
-  lb.classList.remove('active');
-  setTimeout(() => { lbImg.src = ''; }, 300);
-}
-
 function navigateLightbox(dir) {
   currentImageIndex = (currentImageIndex + dir + currentGalleryImages.length) % currentGalleryImages.length;
   lbImg.style.opacity = '0';
@@ -1060,14 +1078,14 @@ document.querySelectorAll('.sg-item img').forEach(img => {
   });
 });
 
-lbClose.addEventListener('click', closeLightbox);
+lbClose.addEventListener('click', () => { lb.classList.remove('active'); setTimeout(() => { lbImg.src = ''; }, 300); });
 lbPrev.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(-1); });
 lbNext.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(1); });
-lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+lb.addEventListener('click', (e) => { if (e.target === lb) { lb.classList.remove('active'); setTimeout(() => { lbImg.src = ''; }, 300); } });
 
 document.addEventListener('keydown', (e) => {
   if (!lb.classList.contains('active')) return;
-  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'Escape') { lb.classList.remove('active'); setTimeout(() => { lbImg.src = ''; }, 300); }
   if (e.key === 'ArrowLeft') navigateLightbox(-1);
   if (e.key === 'ArrowRight') navigateLightbox(1);
 });
@@ -1076,9 +1094,7 @@ let touchStartX = 0;
 lb.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
 lb.addEventListener('touchend', (e) => {
   const diff = e.changedTouches[0].screenX - touchStartX;
-  if (Math.abs(diff) > 50) {
-    navigateLightbox(diff > 0 ? -1 : 1);
-  }
+  if (Math.abs(diff) > 50) { navigateLightbox(diff > 0 ? -1 : 1); }
 }, { passive: true });
 </script>
 
