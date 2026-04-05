@@ -100,11 +100,6 @@ main{position:relative;z-index:2}
 .pf img{width:100%;height:100%;object-fit:cover;object-position:center 15%;transition:transform .6s ease}
 .pf:hover img{transform:scale(1.03)}
 
-/* Buttons */
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.6rem;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;transition:all .3s;font-family:var(--ss);cursor:pointer;border:none}
-.btn-p{background:var(--ac);color:#fff;box-shadow:0 4px 18px rgba(46,125,155,0.2)}.btn-p:hover{background:var(--ac2);transform:translateY(-2px);box-shadow:0 8px 25px rgba(46,125,155,0.3)}
-.btn-g{background:#fff;border:1px solid var(--bd);color:var(--tx);box-shadow:0 2px 8px rgba(0,0,0,0.02)}.btn-g:hover{border-color:var(--ac);color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.05)}
-
 @keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 
 /* ---- SHARED SECTION STYLES ---- */
@@ -151,6 +146,11 @@ section{padding:7rem 0;position:relative}
 .sg-item:hover{box-shadow:0 8px 24px rgba(0,0,0,0.1);transform:translateY(-3px)}
 .sg-item img,.sg-item video{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
 .sg-item:hover img,.sg-item:hover video{transform:scale(1.06)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.6rem;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;transition:all .3s;font-family:var(--ss);cursor:pointer;border:none}
+.btn-p{background:var(--ac);color:#fff;box-shadow:0 4px 18px rgba(46,125,155,0.2)}.btn-p:hover{background:var(--ac2);transform:translateY(-2px);box-shadow:0 8px 25px rgba(46,125,155,0.3)}
+.btn-g{background:#fff;border:1px solid var(--bd);color:var(--tx);box-shadow:0 2px 8px rgba(0,0,0,0.02)}.btn-g:hover{border-color:var(--ac);color:var(--ac);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.05)}
 
 /* ---- LIGHTBOX ---- */
 .lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background-color:rgba(8,12,16,0.96);backdrop-filter:blur(8px);opacity:0;transition:opacity .3s ease}
@@ -261,9 +261,6 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 /* Sub-heading */
 .sub-h{font-family:var(--sf);font-size:1.5rem;color:var(--tx);margin-top:3rem;margin-bottom:1rem;font-weight:600}
 
-/* Placeholder */
-.img-placeholder{width:100%;height:100%;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--sm);font-size:.75rem;color:var(--tx3);text-transform:uppercase;letter-spacing:.1em;padding:1rem;text-align:center}
-
 /* ---- RESPONSIVE ---- */
 @media(max-width:1024px){
   .nav-in,.ct{padding-left:2rem;padding-right:2rem}
@@ -365,6 +362,48 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
     </div>
 
     <div class="collection rv">
+      <div class="pc" onclick="toggleGallery('gallery-langur')">
+        <img src="Delacour_Langur/PC256351.jpg" class="p-img" alt="Delacour's Langur">
+        <div class="po">
+          <div class="pl">Wildlife · Vietnam</div>
+          <div class="pn">Delacour's Langur</div>
+          <div class="pd">Documenting the critically endangered Delacour's Langur in the limestone karsts of Van Long Nature Reserve.</div>
+          <div class="img-count">23 images</div>
+          <div class="expand-hint">Click to toggle gallery <span class="arrow">↓</span></div>
+        </div>
+      </div>
+      
+      <div id="gallery-langur" class="gallery-wrapper">
+        <div class="gallery-inner">
+        <div class="sub-grid">
+          <div class="sg-item"><img src="Delacour_Langur/PC256078.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256118.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256222.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256351.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256408-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256408.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256459.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256710.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256711.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256712.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256716-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256716.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256724.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256727.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256783.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256802.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256808.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256811.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256819.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256821.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC256852.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+          <div class="sg-item"><img src="Delacour_Langur/PC257425.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Delacour Langur"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection rv">
       <div class="pc" onclick="toggleGallery('gallery-arctic-2018')">
         <img src="Arctic_2018/Araon.jpg" class="p-img" alt="Central Arctic Ocean">
         <div class="po">
@@ -379,17 +418,17 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-arctic-2018" class="gallery-wrapper">
         <div class="gallery-inner">
         <div class="sub-grid">
-          <div class="sg-item"><img src="Arctic_2018/Alex_Araron_Julienne.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/America_China.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Arctic_Rainbow.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Auger2.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Augering.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Eun_Jin_Alex.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Ice_coring.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Ice_coring2.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Ice_coring3.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Instrument_setup.jpg" loading="lazy" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Snowman.jpg" loading="lazy" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Alex_Araron_Julienne.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/America_China.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Arctic_Rainbow.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Auger2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Augering.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Eun_Jin_Alex.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Ice_coring.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Ice_coring2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Ice_coring3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Instrument_setup.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
+          <div class="sg-item"><img src="Arctic_2018/Snowman.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2018"></div>
         </div>
         </div>
       </div>
@@ -410,22 +449,22 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-antarctic-2021" class="gallery-wrapper">
         <div class="gallery-inner">
         <div class="sub-grid">
-          <div class="sg-item"><img src="Antarctic_2021/20210124_021259(0).jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210125_072310.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210125_072457.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210125_072721.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210201_020501.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210202_030444.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210202_060926.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210204_052815.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210215_034031.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/Iceberg.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/Marriott_MMS_1522.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1662.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1694.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1726-Edit.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1728.jpg" loading="lazy" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/Tangaroa.jpg" loading="lazy" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210124_021259(0).jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210125_072310.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210125_072457.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210125_072721.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210201_020501.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210202_030444.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210202_060926.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210204_052815.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/20210215_034031.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/Iceberg.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/Marriott_MMS_1522.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1662.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1694.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1726-Edit.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1728.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
+          <div class="sg-item"><img src="Antarctic_2021/Tangaroa.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Antarctic 2021"></div>
         </div>
         </div>
       </div>
@@ -446,18 +485,18 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-arctic-2025" class="gallery-wrapper">
         <div class="gallery-inner">
         <div class="sub-grid">
-          <div class="sg-item"><img src="Arctic_2025/20250415_194857.jpg" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/20250417_182340.jpg" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0197.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0214.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0236.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0252.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0257.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0258.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0259.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0260.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_E0267.JPG" loading="lazy" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_E0272.JPG" loading="lazy" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/20250415_194857.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/20250417_182340.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0197.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0214.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0236.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0252.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0257.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0258.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0259.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_0260.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_E0267.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
+          <div class="sg-item"><img src="Arctic_2025/IMG_E0272.JPG" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Arctic 2025"></div>
           <div class="sg-item"><video src="Arctic_2025/Greenlandic_bowling.mp4" autoplay loop muted playsinline></video></div>
           <div class="sg-item"><video src="Arctic_2025/IMG_0255.MOV" autoplay loop muted playsinline></video></div>
         </div>
@@ -480,73 +519,73 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-vietnam" class="gallery-wrapper">
         <div class="gallery-inner">
         <div class="sub-grid">
-          <div class="sg-item"><img src="Vietnam/P1061764-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061949.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061961.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061980-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061992.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061999.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062002-3.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062005.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062058.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062083.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062169.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062195.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080252.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080267-3.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080270.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080404-3.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1122339-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P3012930.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P3012966.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215484-5.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-3.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-4.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-5.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-6.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-7.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-8.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215515.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215550.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230825.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230926-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230934-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230935-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245565-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245574-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245604-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245821-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245830.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC250007-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC255870-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256078.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256118.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256222.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256351.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256408-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256408.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256459.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256710.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256711.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256712.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256716-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256716.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256724.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256727.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256783.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256802.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256808.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256811.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256819.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256821.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256852.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC257425.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC271013-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC300140-5.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC300185-2.jpg" loading="lazy" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC300189-2.jpg" loading="lazy" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1061764-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1061949.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1061961.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1061980-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1061992.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1061999.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1062002-3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1062005.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1062058.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1062083.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1062169.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1062195.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1080252.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1080267-3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1080270.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1080404-3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P1122339-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P3012930.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/P3012966.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215484-5.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-3.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-4.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-5.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-6.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-7.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490-8.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215490.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215515.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC215550.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC230825.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC230926-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC230934-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC230935-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC245565-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC245574-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC245604-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC245821-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC245830.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC250007-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC255870-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256078.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256118.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256222.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256351.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256408-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256408.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256459.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256710.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256711.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256712.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256716-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256716.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256724.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256727.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256783.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256802.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256808.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256811.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256819.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256821.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC256852.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC257425.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC271013-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC300140-5.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC300185-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
+          <div class="sg-item"><img src="Vietnam/PC300189-2.jpg" loading="lazy" onerror="this.parentElement.style.display='none'" alt="Vietnam"></div>
         </div>
         </div>
       </div>
@@ -953,10 +992,11 @@ let currentGalleryImages = [];
 let currentImageIndex = 0;
 
 function openLightbox(imgEl) {
-  // Find all images in the same gallery
+  // Find all images in the same gallery that are currently visible
   const galleryWrapper = imgEl.closest('.gallery-wrapper');
   if (galleryWrapper) {
-    currentGalleryImages = Array.from(galleryWrapper.querySelectorAll('.sg-item img'));
+    currentGalleryImages = Array.from(galleryWrapper.querySelectorAll('.sg-item img'))
+      .filter(img => img.parentElement.style.display !== 'none');
     currentImageIndex = currentGalleryImages.indexOf(imgEl);
   } else {
     currentGalleryImages = [imgEl];
