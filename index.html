@@ -5,49 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alex Hayward — Earth System Scientist & Photographer</title>
 
-<meta name="description" content="Official website of Alex Hayward, Earth System Scientist at DMI Copenhagen. Specializing in satellite observation, Arctic marine heatwaves, and climate machine learning.">
-<meta name="keywords" content="Alex Hayward, Alexander Hayward, Earth System Scientist, DMI, Danish Meteorological Institute, Arctic Climate, Marine Heatwaves, Satellite Observation, Phytoplankton, Climate Science">
+<meta name="description" content="Official website of Alex Hayward, Earth System Scientist at DMI Copenhagen. Researching satellite observation, Arctic marine heatwaves, and climate machine learning.">
+<meta name="keywords" content="Alex Hayward, Alexander Hayward, Earth System Scientist, DMI, Danish Meteorological Institute, Arctic Climate, Marine Heatwaves, Satellite Observation, Phytoplankton, Climate Science, Nature Photographer">
 <meta name="author" content="Alex Hayward">
+<link rel="canonical" href="https://alex-hayward.com">
 
+<meta property="og:type" content="website">
 <meta property="og:title" content="Alex Hayward — Earth System Scientist & Photographer">
-<meta property="og:description" content="Research on satellite Earth observation, Arctic climate, and machine learning at the Danish Meteorological Institute.">
+<meta property="og:description" content="Researching satellite Earth observation and polar climate at the Danish Meteorological Institute. View photography from the Arctic, Antarctic, and Vietnam.">
 <meta property="og:image" content="https://alex-hayward.com/PROFILE.jpg">
 <meta property="og:url" content="https://alex-hayward.com">
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="google-site-verification" content="ENTER_YOUR_CODE_HERE" />
 
-<link rel="canonical" href="https://alex-hayward.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alex Hayward",
+  "jobTitle": "Earth System Scientist",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Danish Meteorological Institute"
+  },
+  "url": "https://alex-hayward.com",
+  "sameAs": [
+    "https://orcid.org/0000-0002-8818-2886",
+    "https://scholar.google.com/citations?user=kEgz2sEAAAAJ",
+    "https://www.linkedin.com/in/alexander-hayward-1b2a69162/",
+    "https://www.researchgate.net/profile/Alexander-Hayward-4"
+  ],
+  "description": "Earth System Scientist specializing in satellite observation, polar climate, and machine learning. Also a professional nature and fieldwork photographer.",
+  "knowsAbout": ["Arctic Climate", "Marine Heatwaves", "Satellite Observation", "Phytoplankton", "Machine Learning", "Earth System Science", "Nature Photography"]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Barlow:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+
 <style>
 :root{
-  --bg: #f6f4f0;
-  --bg2: #ffffff;
-  --bg3: #e8e2d6;
-  --tx: #1c2b33;
-  --tx2: #4a5e6a;
-  --tx3: #7d8e98;
-  --ac: #2e7d9b;
-  --ac2: #1b5d78;
-  --ac-soft: rgba(46,125,155,0.08);
-  --aw: #b86e3a;
-  --aw2: #a05a2a;
-  --ag: #3d7a5f;
-  --ag2: #2d5e47;
-  --bd: #ddd8cd;
-  --bd2: #cec6b6;
-  --topo: #c4baa8;
-  --ice: #d4e5ed;
-  --sf: 'Playfair Display', Georgia, serif;
-  --ss: 'Barlow', 'Helvetica Neue', sans-serif;
-  --sm: 'IBM Plex Mono', monospace;
+  --bg: #f6f4f0; --bg2: #ffffff; --bg3: #e8e2d6; --tx: #1c2b33; --tx2: #4a5e6a; --tx3: #7d8e98;
+  --ac: #2e7d9b; --ac2: #1b5d78; --ac-soft: rgba(46,125,155,0.08); --aw: #b86e3a; --aw2: #a05a2a;
+  --ag: #3d7a5f; --ag2: #2d5e47; --bd: #ddd8cd; --bd2: #cec6b6; --topo: #c4baa8; --ice: #d4e5ed;
+  --sf: 'Playfair Display', Georgia, serif; --ss: 'Barlow', 'Helvetica Neue', sans-serif; --sm: 'IBM Plex Mono', monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:var(--ss);background:var(--bg);color:var(--tx);line-height:1.75;font-weight:400;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 ::selection{background:var(--ac);color:#fff}
+
+/* --- IMAGE PROTECTION --- */
+img {
+  -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none; user-select: none;
+  -webkit-user-drag: none;
+}
 
 .scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--ac),var(--ag),var(--aw));z-index:200;width:0;transition:none;border-radius:0 2px 2px 0;}
 .bg-fixed{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:linear-gradient(180deg,#f9f7f3 0%,var(--bg) 50%,#f0ece4 100%);}
@@ -109,7 +122,7 @@ section{padding:7rem 0;position:relative}
 .disclaimer-box{background:rgba(184,110,58,0.06);border-left:3px solid var(--aw);padding:1.2rem 1.5rem;border-radius:0 8px 8px 0;margin-top:1.5rem;font-size:.95rem;color:var(--tx2);line-height:1.6}
 .disclaimer-box strong{color:var(--tx);font-weight:600}
 
-.collection{margin-bottom:3rem}
+.collection{margin-bottom:3rem; scroll-margin-top: 100px;}
 .pc{position:relative;overflow:hidden;border-radius:12px;cursor:pointer;aspect-ratio:21/9;background:var(--bg3);box-shadow:0 10px 30px rgba(0,0,0,0.06);width:100%;transition:all .4s ease}
 .pc:hover{box-shadow:0 18px 50px rgba(0,0,0,0.14)}
 .p-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease,filter .8s;filter:brightness(0.85)}
@@ -135,6 +148,11 @@ section{padding:7rem 0;position:relative}
 .sg-item:hover{box-shadow:0 8px 24px rgba(0,0,0,0.1);transform:translateY(-3px)}
 .sg-item img,.sg-item video{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
 .sg-item:hover img,.sg-item:hover video{transform:scale(1.06)}
+
+/* COLLAPSE BUTTON */
+.collapse-btn-wrap { display: flex; justify-content: center; padding: 2.5rem 0 1rem 0; }
+.collapse-btn { background: var(--bg2); border: 1px solid var(--bd); padding: 0.8rem 2.2rem; border-radius: 50px; font-family: var(--sm); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tx2); cursor: pointer; transition: all 0.3s; font-weight: 500; }
+.collapse-btn:hover { background: var(--ac); color: white; border-color: var(--ac); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(46,125,155,0.2); }
 
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.6rem;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;transition:all .3s;font-family:var(--ss);cursor:pointer;border:none}
 .btn-p{background:var(--ac);color:#fff;box-shadow:0 4px 18px rgba(46,125,155,0.2)}.btn-p:hover{background:var(--ac2);transform:translateY(-2px);box-shadow:0 8px 25px rgba(46,125,155,0.3)}
@@ -228,15 +246,11 @@ section{padding:7rem 0;position:relative}
 footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 .ft-in{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
 .ft-c{font-size:.85rem;color:var(--tx3);font-weight:400;font-family:var(--sm)}
+.ft-license{font-size:0.75rem;color:var(--tx3);margin-top:0.5rem;font-family:var(--sm);opacity:0.8}
+.ft-license a{color:var(--ac);text-decoration:none}
 .ft-l{display:flex;gap:2rem}
 .ft-l a{font-size:.8rem;color:var(--tx3);text-decoration:none;font-weight:500;letter-spacing:.05em;text-transform:uppercase;transition:color .2s;font-family:var(--sm)}
 .ft-l a:hover{color:var(--ac)}
-
-.rv{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
-.rv.vis{opacity:1;transform:translateY(0)}
-.rv-d1{transition-delay:.15s}.rv-d2{transition-delay:.3s}
-
-.sub-h{font-family:var(--sf);font-size:1.5rem;color:var(--tx);margin-top:3rem;margin-bottom:1rem;font-weight:600}
 
 @media(max-width:1024px){
   .nav-in,.ct{padding-left:2rem;padding-right:2rem}
@@ -269,27 +283,11 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
   .hero-ol::before{display:none}
 
   /* --- MOBILE FIXES FOR COMPRESSED IMAGES & TEXT --- */
-  .pc {
-    aspect-ratio: 3/2; /* Makes gallery covers taller on phone so they aren't "squashed" */
-  }
-  .po {
-    padding: 1.25rem; /* Reduces padding so text doesn't get squeezed into a tiny column */
-  }
-  .pn {
-    font-size: 1.5rem; /* Scales down the title so it fits on one line */
-    margin-bottom: 0.2rem;
-  }
-  .pd {
-    font-size: 0.85rem; /* Scales down description text */
-    max-width: 100%;
-    line-height: 1.5;
-  }
-  .expand-hint {
-    margin-top: 0.5rem;
-    opacity: 1; /* Always show the "click to toggle" hint on mobile since there is no hover */
-    transform: translateY(0);
-  }
-  /* ------------------------------------------------ */
+  .pc { aspect-ratio: 3/2; } 
+  .po { padding: 1.25rem; }
+  .pn { font-size: 1.5rem; margin-bottom: 0.2rem; }
+  .pd { font-size: 0.85rem; max-width: 100%; line-height: 1.5; }
+  .expand-hint { margin-top: 0.5rem; opacity: 1; transform: translateY(0); }
 }
 </style>
 </head>
@@ -336,14 +334,15 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
     <div>
       <p class="hero-ol">Earth System Scientist · DMI Copenhagen</p>
       <h1>Alex Hayward</h1>
-<p class="hero-tl">I'm an Earth system scientist and photographer based in Copenhagen. I work with satellite observations, polar climate, and machine learning at the Danish Meteorological Institute, looking at changes across the Arctic, Antarctic, and the wider Earth system. This site is a place to share both the science and everything around it—the landscapes, wildlife, and fieldwork behind the data, along with moments from travelling and being outdoors. A lot of what I study happens at a distance, so photography has become a way of staying a bit closer to it all.</p>      <div class="hero-acts">
+      <p class="hero-tl">I'm an Earth system scientist and photographer based in Copenhagen. I work with satellite observations, polar climate, and machine learning at the Danish Meteorological Institute, looking at changes across the Arctic, Antarctic, and the wider Earth system. This site is a place to share both the science and everything around it—the landscapes, wildlife, and fieldwork behind the data, along with moments from travelling and being outdoors.</p>
+      <div class="hero-acts">
         <a href="#photography" class="btn btn-p">Photography</a>
         <a href="#projects" class="btn btn-g">Projects</a>
       </div>
     </div>
     <div class="hero-port">
       <div class="pf">
-        <img src="PROFILE.jpeg" alt="Alex Hayward">
+        <img src="PROFILE.jpg" alt="Alex Hayward">
       </div>
     </div>
   </div>
@@ -360,9 +359,9 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       </div>
     </div>
 
-    <div class="collection rv">
+    <div class="collection rv" id="collection-langur">
       <div class="pc" onclick="toggleGallery('gallery-langur')">
-        <img src="Delacour_Langur/PC256852.jpg" class="p-img" alt="Delacour's Langur">
+        <img src="Delacour_Langur/PC256852.jpg" class="p-img" alt="Delacour's Langur Wildlife Photography">
         <div class="po">
           <div class="pl">Wildlife · Vietnam</div>
           <div class="pn">Delacour's Langur</div>
@@ -374,35 +373,38 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div id="gallery-langur" class="gallery-wrapper">
         <div class="gallery-inner">
-        <div class="sub-grid">
-          <div class="sg-item"><img src="Delacour_Langur/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-          <div class="sg-item"><img src="Delacour_Langur/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-        </div>
+          <div class="sub-grid">
+            <div class="sg-item"><img src="Delacour_Langur/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+          </div>
+          <div class="collapse-btn-wrap">
+            <button class="collapse-btn" onclick="toggleGallery('gallery-langur')">Collapse Gallery ↑</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="collection rv">
+    <div class="collection rv" id="collection-arctic-2018">
       <div class="pc" onclick="toggleGallery('gallery-arctic-2018')">
         <img src="Arctic_2018/Araon.jpg" class="p-img" alt="Central Arctic Ocean">
         <div class="po">
@@ -416,24 +418,27 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div id="gallery-arctic-2018" class="gallery-wrapper">
         <div class="gallery-inner">
-        <div class="sub-grid">
-          <div class="sg-item"><img src="Arctic_2018/Alex_Araron_Julienne.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/America_China.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Arctic_Rainbow.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Auger2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Augering.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Eun_Jin_Alex.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Ice_coring.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Ice_coring2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Ice_coring3.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Instrument_setup.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-          <div class="sg-item"><img src="Arctic_2018/Snowman.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-        </div>
+          <div class="sub-grid">
+            <div class="sg-item"><img src="Arctic_2018/Alex_Araron_Julienne.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/America_China.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Arctic_Rainbow.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Auger2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Augering.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Eun_Jin_Alex.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Ice_coring.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Ice_coring2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Ice_coring3.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Instrument_setup.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Snowman.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+          </div>
+          <div class="collapse-btn-wrap">
+            <button class="collapse-btn" onclick="toggleGallery('gallery-arctic-2018')">Collapse Gallery ↑</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="collection rv rv-d1">
+    <div class="collection rv rv-d1" id="collection-antarctic-2021">
       <div class="pc" onclick="toggleGallery('gallery-antarctic-2021')">
         <img src="Antarctic_2021/20210202_130625.jpg" class="p-img" alt="Ross Sea, Antarctica">
         <div class="po">
@@ -447,29 +452,32 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div id="gallery-antarctic-2021" class="gallery-wrapper">
         <div class="gallery-inner">
-        <div class="sub-grid">
-          <div class="sg-item"><img src="Antarctic_2021/20210124_021259(0).jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210125_072310.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210125_072457.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210125_072721.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210201_020501.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210202_030444.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210202_060926.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210204_052815.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/20210215_034031.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/Iceberg.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/Marriott_MMS_1522.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1662.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1694.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1726-Edit.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1728.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-          <div class="sg-item"><img src="Antarctic_2021/Tangaroa.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-        </div>
+          <div class="sub-grid">
+            <div class="sg-item"><img src="Antarctic_2021/20210124_021259(0).jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210125_072310.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210125_072457.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210125_072721.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210201_020501.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210202_030444.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210202_060926.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210204_052815.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210215_034031.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/Iceberg.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/Marriott_MMS_1522.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1662.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1694.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1726-Edit.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1728.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/Tangaroa.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+          </div>
+          <div class="collapse-btn-wrap">
+            <button class="collapse-btn" onclick="toggleGallery('gallery-antarctic-2021')">Collapse Gallery ↑</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="collection rv rv-d2">
+    <div class="collection rv rv-d2" id="collection-arctic-2025">
       <div class="pc" onclick="toggleGallery('gallery-arctic-2025')">
         <img src="Arctic_2025/IMG_0288.JPG" class="p-img" alt="Qaanaaq, Greenland">
         <div class="po">
@@ -483,29 +491,32 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div id="gallery-arctic-2025" class="gallery-wrapper">
         <div class="gallery-inner">
-        <div class="sub-grid">
-          <div class="sg-item"><img src="Arctic_2025/20250415_194857.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/20250417_182340.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0197.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0214.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0236.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0252.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0257.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0258.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0259.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_0260.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_E0267.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><img src="Arctic_2025/IMG_E0272.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-          <div class="sg-item"><video src="Arctic_2025/Greenlandic_bowling.mp4" autoplay loop muted playsinline></video></div>
-          <div class="sg-item"><video src="Arctic_2025/IMG_0255.MOV" autoplay loop muted playsinline></video></div>
-        </div>
+          <div class="sub-grid">
+            <div class="sg-item"><img src="Arctic_2025/20250415_194857.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/20250417_182340.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0197.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0214.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0236.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0252.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0257.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0258.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0259.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0260.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_E0267.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_E0272.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><video src="Arctic_2025/Greenlandic_bowling.mp4" autoplay loop muted playsinline></video></div>
+            <div class="sg-item"><video src="Arctic_2025/IMG_0255.MOV" autoplay loop muted playsinline></video></div>
+          </div>
+          <div class="collapse-btn-wrap">
+            <button class="collapse-btn" onclick="toggleGallery('gallery-arctic-2025')">Collapse Gallery ↑</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="collection rv">
+    <div class="collection rv" id="collection-vietnam">
       <div class="pc" onclick="toggleGallery('gallery-vietnam')">
-        <img src="Vietnam/PC215512.jpg" class="p-img" alt="Vietnam">
+        <img src="Vietnam/PC215512.jpg" class="p-img" alt="Vietnam Film Photography">
         <div class="po">
           <div class="pl">Travel · Personal Collection</div>
           <div class="pn">Vietnam</div>
@@ -517,75 +528,78 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div id="gallery-vietnam" class="gallery-wrapper">
         <div class="gallery-inner">
-        <div class="sub-grid">
-          <div class="sg-item"><img src="Vietnam/P1061764-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061949.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061961.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061980-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061992.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1061999.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062002-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062005.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062058.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062083.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062169.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1062195.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080252.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080267-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080270.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1080404-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P1122339-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P3012930.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/P3012966.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215484-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-4.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-6.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-7.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490-8.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215490.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215515.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC215550.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230825.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230926-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230934-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC230935-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245565-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245574-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245604-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245821-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC245830.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC250007-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC255870-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC271013-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC300140-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC300185-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-          <div class="sg-item"><img src="Vietnam/PC300189-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-        </div>
+          <div class="sub-grid">
+            <div class="sg-item"><img src="Vietnam/P1061764-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1061949.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1061961.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1061980-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1061992.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1061999.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1062002-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1062005.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1062058.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1062083.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1062169.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1062195.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1080252.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1080267-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1080270.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1080404-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1122339-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P3012930.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P3012966.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215484-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-4.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-6.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-7.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-8.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215515.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC215550.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC230825.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC230926-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC230934-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC230935-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC245565-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC245574-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC245604-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC245821-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC245830.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC250007-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC255870-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC271013-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC300140-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC300185-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/PC300189-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+          </div>
+          <div class="collapse-btn-wrap">
+            <button class="collapse-btn" onclick="toggleGallery('gallery-vietnam')">Collapse Gallery ↑</button>
+          </div>
         </div>
       </div>
     </div>
@@ -629,7 +643,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
         <div class="brc-content">
           <div class="brt"><span class="tag-s">Observation</span></div>
           <h3>ObsSea4Clim</h3>
-          <p>Leader for MHW Definitions dataset and production >15Tb of daily MHW data under varying definitions (link to <a href="https://essd.copernicus.org/preprints/essd-2024-192/" target="_blank">MHW-MAD paper</a>). Improving ocean observing systems to deliver better data for climate modeling, forecasting, and marine ecosystem management.</p>
+          <p>Leader for MHW Definitions dataset and production >15Tb of daily MHW data under varying definitions. Improving ocean observing systems to deliver better data for climate modeling, forecasting, and marine ecosystem management.</p>
           <div class="br-links"><a href="https://obssea4clim.eu/" target="_blank" class="brl">Learn more →</a></div>
         </div>
       </div>
@@ -641,7 +655,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
         <div class="brc-content">
           <div class="brt"><span class="tag-t">ML/Data</span></div>
           <h3>C3S (RETROKLIM)</h3>
-          <p>Extending the CERRA regional reanalysis back to ~1901 using diffusion-based consistency models. Funded by the Copernicus Climate Change Service, and integraing into Denmark's Klimaatlas project, aiding the Danish public understand climate change at the municipal level.</p>
+          <p>Extending the CERRA regional reanalysis back to ~1901 using diffusion-based consistency models. Funded by the Copernicus Climate Change Service, and integraing into Denmark's Klimaatlas project, aiding the Danish public understand climate change.</p>
           <div class="br-links"><a href="https://www.dmi.dk/klimaatlas" target="_blank" class="brl">Learn more (Klimaatlas) →</a></div>
         </div>
       </div>
@@ -885,7 +899,12 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 
 <footer>
   <div class="ft-in">
-    <span class="ft-c">&copy; 2026 Alex Hayward</span>
+    <div>
+      <span class="ft-c">&copy; 2026 Alex Hayward</span>
+      <div class="ft-license">
+        Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0 (Attribution-NonCommercial-NoDerivatives)</a>
+      </div>
+    </div>
     <div class="ft-l">
       <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank">Scholar</a>
       <a href="https://orcid.org/0000-0002-8818-2886" target="_blank">ORCID</a>
@@ -990,7 +1009,7 @@ function updateGalleryCount(id) {
   const wrapper = document.getElementById(id);
   if (!wrapper) return;
   
-  // Count only items that are visible (not hidden by handleImgError)
+  // Count only items that are visible
   const items = wrapper.querySelectorAll('.sg-item');
   let count = 0;
   items.forEach(item => {
@@ -1013,13 +1032,51 @@ window.addEventListener('load', () => {
   galleries.forEach(g => updateGalleryCount(g));
 });
 
-// ---- Gallery toggle ----
+// ---- Gallery toggle & Scroll-Up ----
 function toggleGallery(id) {
   const gallery = document.getElementById(id);
   const pc = gallery.previousElementSibling;
+  const isOpen = gallery.classList.contains('active');
+  
   gallery.classList.toggle('active');
   if (pc) pc.classList.toggle('gallery-open');
+  
+  // If we are collapsing the gallery, scroll back up to the cover image smoothly
+  if (isOpen) {
+    const collectionId = 'collection-' + id.replace('gallery-', '');
+    const element = document.getElementById(collectionId);
+    if (element) {
+      const offset = 100; // Account for the sticky header height
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth"
+      });
+    }
+  }
 }
+
+// ---- Image Protection Logic ----
+// 1. Disable Right-Click on Images
+document.addEventListener('contextmenu', function(e) {
+  if (e.target.tagName === 'IMG' || e.target.closest('.pc')) {
+    e.preventDefault();
+  }
+}, false);
+
+// 2. Prevent Keyboard Shortcuts (Ctrl+S / Cmd+S)
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault();
+  }
+});
+
+// 3. Ensure all images are non-draggable
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('draggable', 'false');
+  });
+});
 
 // ---- Lightbox with navigation ----
 const lb = document.getElementById('lightbox');
