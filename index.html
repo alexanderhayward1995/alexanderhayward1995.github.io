@@ -160,8 +160,8 @@ section{padding:7rem 0;position:relative}
 
 .lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background-color:rgba(8,12,16,0.96);backdrop-filter:blur(8px);opacity:0;transition:opacity .3s ease}
 .lightbox.active{display:flex;align-items:center;justify-content:center;opacity:1}
-.lb-img{max-width:88%;max-height:88vh;border-radius:4px;box-shadow:0 15px 60px rgba(0,0,0,0.6);transform:scale(0.95);transition:transform .3s ease;object-fit:contain}
-.lightbox.active .lb-img{transform:scale(1)}
+.lb-img, .lb-video{max-width:88%;max-height:88vh;border-radius:4px;box-shadow:0 15px 60px rgba(0,0,0,0.6);transform:scale(0.95);transition:transform .3s ease;object-fit:contain;outline:none;}
+.lightbox.active .lb-img, .lightbox.active .lb-video{transform:scale(1)}
 .lb-close{position:absolute;top:24px;right:32px;color:rgba(255,255,255,0.7);font-size:36px;font-weight:300;cursor:pointer;transition:all .2s;font-family:var(--ss);line-height:1;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,0.06)}
 .lb-close:hover{color:#fff;background:rgba(255,255,255,0.12)}
 .lb-nav{position:absolute;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.6);font-size:28px;cursor:pointer;transition:all .25s;width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,0.06);font-family:var(--ss);user-select:none}
@@ -301,7 +301,8 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
   <span class="lb-close">&times;</span>
   <span class="lb-nav lb-prev" id="lbPrev">&#8249;</span>
   <span class="lb-nav lb-next" id="lbNext">&#8250;</span>
-  <img class="lb-img" id="lb-img" src="" alt="Enlarged view">
+  <img class="lb-img" id="lb-img" src="" alt="Enlarged view" style="display:none;">
+  <video class="lb-video" id="lb-video" controls playsinline style="display:none;"></video>
   <div class="lb-counter" id="lbCounter"></div>
 </div>
 
@@ -638,7 +639,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div class="brc rv rv-d1">
         <div class="brc-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fobssea4clim.eu%2F/large/" class="brc-img" alt="ObsSea4Clim">
+          <img src="ObsSea4Clim.png" class="brc-img" alt="ObsSea4Clim">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-s">Observation</span></div>
@@ -650,7 +651,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div class="brc rv rv-d2">
         <div class="brc-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fwww.dmi.dk%2Fklimaatlas/large/" class="brc-img" alt="C3S RETROKLIM">
+          <img src="Klimaatlas.jpg" class="brc-img" alt="C3S RETROKLIM / Klimaatlas">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-t">ML/Data</span></div>
@@ -1081,68 +1082,105 @@ window.addEventListener('DOMContentLoaded', () => {
 // ---- Lightbox with navigation ----
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lb-img');
+const lbVideo = document.getElementById('lb-video');
 const lbClose = document.querySelector('.lb-close');
 const lbPrev = document.getElementById('lbPrev');
 const lbNext = document.getElementById('lbNext');
 const lbCounter = document.getElementById('lbCounter');
 
-let currentGalleryImages = [];
-let currentImageIndex = 0;
+let currentGalleryMedia = [];
+let currentMediaIndex = 0;
 
-function openLightbox(imgEl) {
-  const galleryWrapper = imgEl.closest('.gallery-wrapper');
+function openLightbox(mediaEl) {
+  const galleryWrapper = mediaEl.closest('.gallery-wrapper');
   if (galleryWrapper) {
-    // Only include visible images in lightbox navigation
-    currentGalleryImages = Array.from(galleryWrapper.querySelectorAll('.sg-item img'))
-      .filter(img => img.parentElement.style.display !== 'none');
-    currentImageIndex = currentGalleryImages.indexOf(imgEl);
+    // Only include visible images AND videos in lightbox navigation
+    currentGalleryMedia = Array.from(galleryWrapper.querySelectorAll('.sg-item img, .sg-item video'))
+      .filter(el => el.parentElement.style.display !== 'none');
+    currentMediaIndex = currentGalleryMedia.indexOf(mediaEl);
   } else {
-    currentGalleryImages = [imgEl];
-    currentImageIndex = 0;
+    currentGalleryMedia = [mediaEl];
+    currentMediaIndex = 0;
   }
-  showLightboxImage();
+  showLightboxMedia();
   lb.classList.add('active');
 }
 
-function showLightboxImage() {
-  if (currentGalleryImages.length === 0) return;
-  const img = currentGalleryImages[currentImageIndex];
-  lbImg.src = img.src;
-  lbCounter.textContent = (currentImageIndex + 1) + ' / ' + currentGalleryImages.length;
-  const showNav = currentGalleryImages.length > 1;
+function showLightboxMedia() {
+  if (currentGalleryMedia.length === 0) return;
+  const media = currentGalleryMedia[currentMediaIndex];
+  
+  // Determine if it's a video or image
+  if (media.tagName === 'VIDEO') {
+    lbImg.style.display = 'none';
+    lbVideo.style.display = 'block';
+    lbVideo.src = media.src;
+    lbVideo.play();
+  } else {
+    lbVideo.style.display = 'none';
+    lbVideo.pause(); // Pause any previous video playing
+    lbImg.style.display = 'block';
+    lbImg.src = media.src;
+  }
+  
+  lbCounter.textContent = (currentMediaIndex + 1) + ' / ' + currentGalleryMedia.length;
+  
+  const showNav = currentGalleryMedia.length > 1;
   lbPrev.style.display = showNav ? 'flex' : 'none';
   lbNext.style.display = showNav ? 'flex' : 'none';
   lbCounter.style.display = showNav ? 'block' : 'none';
 }
 
 function navigateLightbox(dir) {
-  currentImageIndex = (currentImageIndex + dir + currentGalleryImages.length) % currentGalleryImages.length;
-  lbImg.style.opacity = '0';
-  lbImg.style.transform = 'scale(0.97)';
+  currentMediaIndex = (currentMediaIndex + dir + currentGalleryMedia.length) % currentGalleryMedia.length;
+  
+  if (lbImg.style.display === 'block') {
+    lbImg.style.opacity = '0';
+    lbImg.style.transform = 'scale(0.97)';
+  } else {
+    lbVideo.style.opacity = '0';
+    lbVideo.style.transform = 'scale(0.97)';
+  }
+  
   setTimeout(() => {
-    showLightboxImage();
+    showLightboxMedia();
     lbImg.style.opacity = '1';
     lbImg.style.transform = 'scale(1)';
+    lbVideo.style.opacity = '1';
+    lbVideo.style.transform = 'scale(1)';
   }, 150);
 }
 
 lbImg.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+lbVideo.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
 
-document.querySelectorAll('.sg-item img').forEach(img => {
-  img.addEventListener('click', (e) => {
+// Attach listeners to both images and videos
+document.querySelectorAll('.sg-item img, .sg-item video').forEach(media => {
+  media.addEventListener('click', (e) => {
     e.stopPropagation();
-    openLightbox(img);
+    // Prevent video clicks from playing the inline video if we want it to open lightbox instead
+    if (media.tagName === 'VIDEO') { e.preventDefault(); }
+    openLightbox(media);
   });
 });
 
-lbClose.addEventListener('click', () => { lb.classList.remove('active'); setTimeout(() => { lbImg.src = ''; }, 300); });
+// Close and clear
+function closeLightbox() {
+  lb.classList.remove('active');
+  setTimeout(() => { 
+    lbImg.src = ''; 
+    lbVideo.src = ''; 
+  }, 300);
+}
+
+lbClose.addEventListener('click', closeLightbox);
 lbPrev.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(-1); });
 lbNext.addEventListener('click', (e) => { e.stopPropagation(); navigateLightbox(1); });
-lb.addEventListener('click', (e) => { if (e.target === lb) { lb.classList.remove('active'); setTimeout(() => { lbImg.src = ''; }, 300); } });
+lb.addEventListener('click', (e) => { if (e.target === lb) { closeLightbox(); } });
 
 document.addEventListener('keydown', (e) => {
   if (!lb.classList.contains('active')) return;
-  if (e.key === 'Escape') { lb.classList.remove('active'); setTimeout(() => { lbImg.src = ''; }, 300); }
+  if (e.key === 'Escape') { closeLightbox(); }
   if (e.key === 'ArrowLeft') navigateLightbox(-1);
   if (e.key === 'ArrowRight') navigateLightbox(1);
 });
