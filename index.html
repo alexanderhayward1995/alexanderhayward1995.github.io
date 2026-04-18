@@ -1,47 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex Hayward — Earth System Scientist & Photographer</title>
 
-<meta name="description" content="Official website of Alex Hayward, Earth System Scientist at DMI Copenhagen. Researching satellite observation, Arctic marine heatwaves, and climate machine learning.">
-<meta name="keywords" content="Alex Hayward, Alexander Hayward, Earth System Scientist, DMI, Danish Meteorological Institute, Arctic Climate, Marine Heatwaves, Satellite Observation, Phytoplankton, Climate Science, Nature Photographer">
+<!-- ============================================================
+     PRIMARY TITLE & DESCRIPTION — built for name-disambiguation
+     SEO. "Dr Alex Hayward" + "DMI Copenhagen" + research topics
+     helps Google tell this Alex Hayward apart from the artist, 
+     the photographer, the Exeter scientist, the Paralympian, etc.
+     ============================================================ -->
+<title>Dr Alex Hayward — Earth System Scientist, DMI Copenhagen | Arctic & Satellite Research</title>
+<meta name="description" content="Dr Alex Hayward — Earth System Scientist at the Danish Meteorological Institute (DMI) in Copenhagen. Researching Arctic marine heatwaves, satellite Earth observation, polar phytoplankton, and machine-learning downscaling. Creator of the phytoclass software; first-author in Nature Climate Change.">
+<meta name="keywords" content="Alex Hayward, Alexander Hayward, Dr Alex Hayward, Alex Hayward DMI, Alex Hayward Copenhagen, Earth System Scientist, Danish Meteorological Institute, Arctic marine heatwaves, satellite Earth observation, polar phytoplankton, phytoclass, machine learning climate, marine biogeochemistry, Nature Climate Change, AMAP 2026, nature photographer">
 <meta name="author" content="Alex Hayward">
-<link rel="canonical" href="https://alex-hayward.com">
+<link rel="canonical" href="https://alex-hayward.com/">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alex Hayward — Earth System Scientist & Photographer">
-<meta property="og:description" content="Researching satellite Earth observation and polar climate at the Danish Meteorological Institute. View photography from the Arctic, Antarctic, and Vietnam.">
+<!-- Geo targeting (Copenhagen / DMI headquarters) -->
+<meta name="geo.region" content="DK-84">
+<meta name="geo.placename" content="Copenhagen, Denmark">
+<meta name="geo.position" content="55.7202;12.5613">
+<meta name="ICBM" content="55.7202, 12.5613">
+
+<!-- Robots directive — let Google use larger image previews & full-length snippets -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<!-- Favicons — generate a set (e.g. realfavicongenerator.net) from a square crop of PROFILE.jpg 
+     and drop the files into the site root. Until you do, these links will 404 silently. -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Alex Hayward">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr Alex Hayward — Earth System Scientist, DMI Copenhagen">
+<meta property="og:description" content="Earth System Scientist at the Danish Meteorological Institute. Arctic marine heatwaves, satellite Earth observation, phytoplankton, and polar fieldwork photography.">
 <meta property="og:image" content="https://alex-hayward.com/PROFILE.jpg">
-<meta property="og:url" content="https://alex-hayward.com">
+<meta property="og:image:alt" content="Portrait of Dr Alex Hayward, Earth System Scientist at the Danish Meteorological Institute">
+<meta property="og:url" content="https://alex-hayward.com/">
+<meta property="og:locale" content="en_GB">
+<meta property="profile:first_name" content="Alexander">
+<meta property="profile:last_name" content="Hayward">
+
+<!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dr Alex Hayward — Earth System Scientist, DMI Copenhagen">
+<meta name="twitter:description" content="Arctic marine heatwaves, satellite Earth observation, phytoplankton, and polar fieldwork photography.">
+<meta name="twitter:image" content="https://alex-hayward.com/PROFILE.jpg">
 
-<meta name="google-site-verification" content="ENTER_YOUR_CODE_HERE" />
+<!-- ============================================================
+     Google Search Console: you've already verified via DNS (per
+     your Search Console screenshots), so the broken placeholder
+     tag has been removed. If you ever want to add HTML-tag
+     verification as a second method, paste the meta tag here.
+     ============================================================ -->
 
+<!-- ============================================================
+     Person schema — massively expanded for name disambiguation
+     and Knowledge Panel eligibility. The richer the sameAs chain
+     and the more identifying properties, the better Google can
+     tell this Alex Hayward from every other Alex Hayward.
+     ============================================================ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://alex-hayward.com/#person",
   "name": "Alex Hayward",
+  "givenName": "Alexander",
+  "additionalName": "Alex",
+  "familyName": "Hayward",
+  "alternateName": ["Alexander Hayward", "Dr Alex Hayward"],
+  "honorificPrefix": "Dr",
   "jobTitle": "Earth System Scientist",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Danish Meteorological Institute"
+  "description": "Dr Alex Hayward is an Earth System Scientist at the Danish Meteorological Institute in Copenhagen, specialising in Arctic marine heatwaves, satellite Earth observation, polar phytoplankton, and machine learning for climate. He is the creator of the open-source phytoclass software and a first-author in Nature Climate Change.",
+  "url": "https://alex-hayward.com/",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://alex-hayward.com/PROFILE.jpg",
+    "caption": "Dr Alex Hayward"
   },
-  "url": "https://alex-hayward.com",
+  "nationality": { "@type": "Country", "name": "United Kingdom" },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Danish Meteorological Institute",
+    "alternateName": "DMI",
+    "url": "https://www.dmi.dk/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lyngbyvej 100",
+      "addressLocality": "Copenhagen",
+      "postalCode": "2100",
+      "addressCountry": "DK"
+    }
+  },
+  "workLocation": {
+    "@type": "Place",
+    "name": "Copenhagen, Denmark",
+    "geo": { "@type": "GeoCoordinates", "latitude": 55.7202, "longitude": 12.5613 }
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Otago", "url": "https://www.otago.ac.nz/" },
+    { "@type": "CollegeOrUniversity", "name": "University College London", "alternateName": "UCL", "url": "https://www.ucl.ac.uk/" }
+  ],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "PhD in Marine Sciences", "recognizedBy": { "@type": "Organization", "name": "University of Otago" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "MSci in Earth Sciences", "recognizedBy": { "@type": "Organization", "name": "University College London" } }
+  ],
+  "knowsAbout": [
+    "Arctic Climate", "Marine Heatwaves", "Satellite Earth Observation", "Phytoplankton",
+    "Machine Learning", "Earth System Science", "Sea Ice", "Antarctic Marine Ecology",
+    "Climate Downscaling", "Ocean Colour", "Chemotaxonomy", "Nature Photography"
+  ],
+  "knowsLanguage": ["en", "da"],
   "sameAs": [
     "https://orcid.org/0000-0002-8818-2886",
     "https://scholar.google.com/citations?user=kEgz2sEAAAAJ",
     "https://www.linkedin.com/in/alexander-hayward-1b2a69162/",
-    "https://www.researchgate.net/profile/Alexander-Hayward-4"
-  ],
-  "description": "Earth System Scientist specializing in satellite observation, polar climate, and machine learning. Also a professional nature and fieldwork photographer.",
-  "knowsAbout": ["Arctic Climate", "Marine Heatwaves", "Satellite Observation", "Phytoplankton", "Machine Learning", "Earth System Science", "Nature Photography"]
+    "https://www.researchgate.net/profile/Alexander-Hayward-4",
+    "https://www.dmi.dk/",
+    "https://cran.r-project.org/web/packages/phytoclass/"
+  ]
+}
+</script>
+
+<!-- WebSite schema — marks this as the canonical site for the entity -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://alex-hayward.com/#website",
+  "url": "https://alex-hayward.com/",
+  "name": "Alex Hayward",
+  "description": "Personal website of Dr Alex Hayward, Earth System Scientist at DMI Copenhagen.",
+  "inLanguage": "en-GB",
+  "about": { "@id": "https://alex-hayward.com/#person" },
+  "author": { "@id": "https://alex-hayward.com/#person" },
+  "publisher": { "@id": "https://alex-hayward.com/#person" }
+}
+</script>
+
+<!-- FAQ schema — answers the queries people actually type when looking for Alex.
+     These also make the answers eligible for rich results in search. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Alex Hayward?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dr Alex Hayward (Alexander Hayward) is an Earth System Scientist at the Danish Meteorological Institute (DMI) in Copenhagen. His research focuses on Arctic marine heatwaves, satellite Earth observation, polar phytoplankton, and machine learning for climate downscaling. He holds a PhD in Marine Sciences from the University of Otago and an MSci from UCL, and is the creator of the open-source phytoclass software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does Alex Hayward work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alex Hayward works in the Satellites and Arctic Division of the Danish Meteorological Institute (DMI) in Copenhagen, Denmark."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is phytoclass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "phytoclass is an open-source chemotaxonomic method and R software package developed by Alex Hayward and collaborators for deriving phytoplankton community composition from pigment data. It is available on CRAN and has a graphical user interface at phytoclass.org."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What has Alex Hayward published?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alex Hayward has authored over 18 peer-reviewed publications, including a first-author paper in Nature Climate Change (2025) on Antarctic phytoplankton community shifts under changing sea-ice regimes, a first-author paper in Communications Earth & Environment on circumpolar phytoplankton class boundaries, and the phytoclass methodology paper in Limnology and Oceanography: Methods."
+      }
+    }
+  ]
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Barlow:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
@@ -72,7 +217,7 @@ nav.scrolled{background:rgba(246,244,240,0.92);backdrop-filter:blur(18px);border
 nav.scrolled .nav-in{padding:1rem 3rem}
 .nav-n{font-family:var(--sf);font-size:1.3rem;font-weight:600;color:var(--tx);text-decoration:none;letter-spacing:0.02em;transition:color .3s}
 .nav-n:hover{color:var(--ac)}
-.nav-l{display:flex;gap:2.5rem;list-style:none}
+.nav-l{display:flex;gap:2.2rem;list-style:none}
 .nav-l a{text-decoration:none;color:var(--tx2);font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;transition:all .3s;position:relative;padding-bottom:4px}
 .nav-l a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--ac);transition:width .3s ease;border-radius:1px;}
 .nav-l a:hover{color:var(--ac)}
@@ -190,6 +335,23 @@ section{padding:7rem 0;position:relative}
 .brl{font-family:var(--sm);font-size:.75rem;color:var(--ac);text-decoration:none;letter-spacing:.08em;transition:color .2s;font-weight:600}
 .brl:hover{color:var(--ac2)}
 
+/* ---- Publications section ---- */
+.pub-list{display:flex;flex-direction:column;gap:0}
+.pub-item{display:grid;grid-template-columns:140px 1fr;gap:2rem;padding:1.75rem 0;border-bottom:1px solid var(--bd);align-items:start;transition:background .2s}
+.pub-item:first-of-type{border-top:1px solid var(--bd)}
+.pub-item:hover{background:var(--ac-soft);margin:0 -0.5rem;padding-left:.5rem;padding-right:.5rem;border-radius:6px}
+.pub-meta{font-family:var(--sm);font-size:.72rem;font-weight:500;color:var(--ac);letter-spacing:.04em;padding-top:.3rem;line-height:1.5}
+.pub-meta .pub-year{display:block;font-size:.85rem;font-weight:600;color:var(--tx);margin-bottom:.2rem}
+.pub-body .pub-title{font-family:var(--sf);font-size:1.25rem;font-weight:600;color:var(--tx);line-height:1.35;margin-bottom:.55rem}
+.pub-body .pub-title a{color:var(--tx);text-decoration:none;border-bottom:1px solid transparent;transition:all .2s}
+.pub-body .pub-title a:hover{color:var(--ac);border-bottom-color:var(--ac)}
+.pub-authors{font-size:.92rem;color:var(--tx2);line-height:1.6;margin-bottom:.35rem}
+.pub-authors strong{color:var(--tx);font-weight:600}
+.pub-venue{font-size:.85rem;color:var(--tx3);font-style:italic}
+.pub-venue a{color:var(--ac);font-style:normal;text-decoration:none;border-bottom:1px solid rgba(46,125,155,0.25);transition:border-color .2s}
+.pub-venue a:hover{border-color:var(--ac)}
+.pub-footer{margin-top:2.5rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+
 .press-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
 .pr-card{background:var(--bg2);border:1px solid var(--bd);border-radius:12px;overflow:hidden;transition:all .3s ease;box-shadow:0 4px 15px rgba(0,0,0,0.02);display:flex;flex-direction:column}
 .pr-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(0,0,0,.08);border-color:var(--bd2)}
@@ -272,6 +434,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
   .brg{grid-template-columns:1fr}
   .co-lay{grid-template-columns:1fr}
   .mt-e{grid-template-columns:1fr;gap:.2rem}
+  .pub-item{grid-template-columns:1fr;gap:.5rem}
   .cv-wrap{flex-direction:column;text-align:center;gap:1.5rem}
   .sub-grid{grid-template-columns:repeat(2,1fr)}
   section{padding:5rem 0}
@@ -312,17 +475,19 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
     <ul class="nav-l" id="navLinks">
       <li><a href="#photography">Photography</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#press">Press</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-tog" id="navTog"><span></span><span></span><span></span></div>
+    <div class="nav-tog" id="navTog" aria-label="Toggle menu"><span></span><span></span><span></span></div>
   </div>
 </nav>
 
 <div class="mob-nav" id="mobNav">
   <a href="#photography">Photography</a>
   <a href="#projects">Projects</a>
+  <a href="#publications">Publications</a>
   <a href="#press">Press</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
@@ -333,17 +498,18 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 <header class="hero">
   <div class="hero-c">
     <div>
-      <p class="hero-ol">Earth System Scientist · DMI Copenhagen</p>
+      <p class="hero-ol">Earth System Scientist · DMI Copenhagen · PhD Marine Sciences</p>
       <h1>Alex Hayward</h1>
-      <p class="hero-tl">I'm an Earth system scientist and photographer based in Copenhagen. I work with satellite observations, polar climate, and machine learning at the Danish Meteorological Institute, looking at changes across the Arctic, Antarctic, and the wider Earth system. This site is a place to share both the science and everything around it—the landscapes, wildlife, and fieldwork behind the data, along with moments from travelling and being outdoors.</p>
+      <p class="hero-tl">I'm Dr Alex Hayward — an Earth system scientist and photographer based in Copenhagen. I work with satellite observations, polar climate, and machine learning at the <strong>Danish Meteorological Institute</strong>, looking at changes across the Arctic, Antarctic, and the wider Earth system. This site is a place to share both the science and everything around it — the landscapes, wildlife, and fieldwork behind the data, along with moments from travelling and being outdoors.</p>
       <div class="hero-acts">
         <a href="#photography" class="btn btn-p">Photography</a>
+        <a href="#publications" class="btn btn-g">Publications</a>
         <a href="#projects" class="btn btn-g">Projects</a>
       </div>
     </div>
     <div class="hero-port">
       <div class="pf">
-        <img src="PROFILE.jpg" alt="Alex Hayward">
+        <img src="PROFILE.jpg" alt="Dr Alex Hayward, Earth System Scientist at the Danish Meteorological Institute in Copenhagen" width="280" height="360" fetchpriority="high">
       </div>
     </div>
   </div>
@@ -362,7 +528,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 
     <div class="collection rv" id="collection-langur">
       <div class="pc" onclick="toggleGallery('gallery-langur')">
-        <img src="Delacour_Langur/PC256852.jpg" class="p-img" alt="Delacour's Langur Wildlife Photography">
+        <img src="Delacour_Langur/PC256852.jpg" class="p-img" alt="Critically endangered Delacour's Langur photographed by Alex Hayward in Van Long Nature Reserve, Vietnam">
         <div class="po">
           <div class="pl">Wildlife · Vietnam</div>
           <div class="pn">Delacour's Langur</div>
@@ -375,28 +541,28 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-langur" class="gallery-wrapper">
         <div class="gallery-inner">
           <div class="sub-grid">
-            <div class="sg-item"><img src="Delacour_Langur/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
-            <div class="sg-item"><img src="Delacour_Langur/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour Langur"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
+            <div class="sg-item"><img src="Delacour_Langur/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-langur')" onerror="handleImgError(this)" alt="Delacour's Langur in Van Long Nature Reserve, Vietnam"></div>
           </div>
           <div class="collapse-btn-wrap">
             <button class="collapse-btn" onclick="toggleGallery('gallery-langur')">Collapse Gallery ↑</button>
@@ -407,7 +573,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 
     <div class="collection rv" id="collection-arctic-2018">
       <div class="pc" onclick="toggleGallery('gallery-arctic-2018')">
-        <img src="Arctic_2018/Araon.jpg" class="p-img" alt="Central Arctic Ocean">
+        <img src="Arctic_2018/Araon.jpg" class="p-img" alt="Central Arctic Ocean fieldwork aboard R.V. Araon, 2018 Changing Arctic Ocean expedition">
         <div class="po">
           <div class="pl">Expedition · 2018</div>
           <div class="pn">Central Arctic Ocean</div>
@@ -420,17 +586,17 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-arctic-2018" class="gallery-wrapper">
         <div class="gallery-inner">
           <div class="sub-grid">
-            <div class="sg-item"><img src="Arctic_2018/Alex_Araron_Julienne.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/America_China.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Arctic_Rainbow.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Auger2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Augering.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Eun_Jin_Alex.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Ice_coring.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Ice_coring2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Ice_coring3.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Instrument_setup.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
-            <div class="sg-item"><img src="Arctic_2018/Snowman.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Alex_Araron_Julienne.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic fieldwork aboard R.V. Araon 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/America_China.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic fieldwork aboard R.V. Araon 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Arctic_Rainbow.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic rainbow during R.V. Araon expedition 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Auger2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Ice augering on the Central Arctic Ocean, 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Augering.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Ice augering on the Central Arctic Ocean, 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Eun_Jin_Alex.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Arctic fieldwork aboard R.V. Araon 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Ice_coring.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Ice coring on the Central Arctic Ocean, 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Ice_coring2.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Ice coring on the Central Arctic Ocean, 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Ice_coring3.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Ice coring on the Central Arctic Ocean, 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Instrument_setup.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Autonomous sea-ice observing instrument setup, Central Arctic Ocean 2018"></div>
+            <div class="sg-item"><img src="Arctic_2018/Snowman.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2018')" onerror="handleImgError(this)" alt="Snowman built during the 2018 Central Arctic Ocean expedition"></div>
           </div>
           <div class="collapse-btn-wrap">
             <button class="collapse-btn" onclick="toggleGallery('gallery-arctic-2018')">Collapse Gallery ↑</button>
@@ -441,7 +607,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 
     <div class="collection rv rv-d1" id="collection-antarctic-2021">
       <div class="pc" onclick="toggleGallery('gallery-antarctic-2021')">
-        <img src="Antarctic_2021/20210202_130625.jpg" class="p-img" alt="Ross Sea, Antarctica">
+        <img src="Antarctic_2021/20210202_130625.jpg" class="p-img" alt="Ross Sea, Antarctica — Southern Ocean fieldwork aboard R.V. Tangaroa, 2021">
         <div class="po">
           <div class="pl">Expedition · 2021</div>
           <div class="pn">Ross Sea, Antarctica</div>
@@ -454,22 +620,22 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-antarctic-2021" class="gallery-wrapper">
         <div class="gallery-inner">
           <div class="sub-grid">
-            <div class="sg-item"><img src="Antarctic_2021/20210124_021259(0).jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210125_072310.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210125_072457.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210125_072721.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210201_020501.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210202_030444.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210202_060926.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210204_052815.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/20210215_034031.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/Iceberg.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/Marriott_MMS_1522.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1662.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1694.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1726-Edit.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1728.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
-            <div class="sg-item"><img src="Antarctic_2021/Tangaroa.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Antarctic 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210124_021259(0).jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210125_072310.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210125_072457.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210125_072721.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210201_020501.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210202_030444.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210202_060926.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210204_052815.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/20210215_034031.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/Iceberg.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Iceberg, Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/Marriott_MMS_1522.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Ross Sea Antarctic expedition 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1662.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Alex Hayward in the wet lab aboard R.V. Tangaroa, 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1694.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Alex Hayward in the wet lab aboard R.V. Tangaroa, 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1726-Edit.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Alex Hayward in the wet lab aboard R.V. Tangaroa, 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/TAN2101_01_26_alex lab_DSC1728.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="Alex Hayward in the wet lab aboard R.V. Tangaroa, 2021"></div>
+            <div class="sg-item"><img src="Antarctic_2021/Tangaroa.jpg" loading="lazy" onload="updateGalleryCount('gallery-antarctic-2021')" onerror="handleImgError(this)" alt="R.V. Tangaroa in the Ross Sea, Antarctic expedition 2021"></div>
           </div>
           <div class="collapse-btn-wrap">
             <button class="collapse-btn" onclick="toggleGallery('gallery-antarctic-2021')">Collapse Gallery ↑</button>
@@ -480,7 +646,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 
     <div class="collection rv rv-d2" id="collection-arctic-2025">
       <div class="pc" onclick="toggleGallery('gallery-arctic-2025')">
-        <img src="Arctic_2025/IMG_0288.JPG" class="p-img" alt="Qaanaaq, Greenland">
+        <img src="Arctic_2025/IMG_0288.JPG" class="p-img" alt="Qaanaaq, Greenland — Alex Hayward high Arctic fieldwork, 2025">
         <div class="po">
           <div class="pl">Fieldwork · 2025</div>
           <div class="pn">Qaanaaq, Greenland</div>
@@ -493,18 +659,18 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-arctic-2025" class="gallery-wrapper">
         <div class="gallery-inner">
           <div class="sub-grid">
-            <div class="sg-item"><img src="Arctic_2025/20250415_194857.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/20250417_182340.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0197.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0214.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0236.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0252.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0257.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0258.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0259.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_0260.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_E0267.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
-            <div class="sg-item"><img src="Arctic_2025/IMG_E0272.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Arctic 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/20250415_194857.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/20250417_182340.jpg" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0197.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0214.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0236.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0252.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0257.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0258.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0259.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_0260.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_E0267.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
+            <div class="sg-item"><img src="Arctic_2025/IMG_E0272.JPG" loading="lazy" onload="updateGalleryCount('gallery-arctic-2025')" onerror="handleImgError(this)" alt="Qaanaaq, Greenland Arctic fieldwork 2025"></div>
             <div class="sg-item"><video src="Arctic_2025/Greenlandic_bowling.mp4" autoplay loop muted playsinline></video></div>
             <div class="sg-item"><video src="Arctic_2025/IMG_0255.MOV" autoplay loop muted playsinline></video></div>
           </div>
@@ -517,7 +683,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 
     <div class="collection rv" id="collection-vietnam">
       <div class="pc" onclick="toggleGallery('gallery-vietnam')">
-        <img src="Vietnam/PC215512.jpg" class="p-img" alt="Vietnam Film Photography">
+        <img src="Vietnam/PC215512.jpg" class="p-img" alt="Vietnam film photography by Alex Hayward, shot on an Olympus OM-1">
         <div class="po">
           <div class="pl">Travel · Personal Collection</div>
           <div class="pn">Vietnam</div>
@@ -530,73 +696,73 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       <div id="gallery-vietnam" class="gallery-wrapper">
         <div class="gallery-inner">
           <div class="sub-grid">
-            <div class="sg-item"><img src="Vietnam/P1061764-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1061949.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1061961.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1061980-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1061992.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1061999.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1062002-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1062005.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1062058.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1062083.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1062169.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1062195.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1080252.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1080267-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1080270.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1080404-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P1122339-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P3012930.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/P3012966.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215484-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-4.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-6.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-7.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490-8.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215490.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215515.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC215550.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC230825.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC230926-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC230934-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC230935-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC245565-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC245574-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC245604-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC245821-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC245830.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC250007-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC255870-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC271013-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC300140-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC300185-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
-            <div class="sg-item"><img src="Vietnam/PC300189-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam"></div>
+            <div class="sg-item"><img src="Vietnam/P1061764-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1061949.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1061961.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1061980-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1061992.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1061999.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1062002-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1062005.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1062058.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1062083.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1062169.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1062195.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1080252.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1080267-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1080270.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1080404-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P1122339-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P3012930.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/P3012966.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215484-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-3.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-4.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-6.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-7.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490-8.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215490.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215515.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC215550.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC230825.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC230926-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC230934-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC230935-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC245565-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC245574-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC245604-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC245821-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC245830.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC250007-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC255870-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256078.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256118.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256222.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256351.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256408-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256408.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256459.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256710.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256711.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256712.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256716-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256716.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256724.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256727.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256783.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256802.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256808.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256811.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256819.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256821.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC256852.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC257425.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC271013-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC300140-5.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC300185-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
+            <div class="sg-item"><img src="Vietnam/PC300189-2.jpg" loading="lazy" onload="updateGalleryCount('gallery-vietnam')" onerror="handleImgError(this)" alt="Vietnam film photography by Alex Hayward"></div>
           </div>
           <div class="collapse-btn-wrap">
             <button class="collapse-btn" onclick="toggleGallery('gallery-vietnam')">Collapse Gallery ↑</button>
@@ -627,75 +793,75 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div class="brc rv">
         <div class="brc-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fclimate.esa.int%2Fen%2Fprojects%2Focean-colour%2F/large/" class="brc-img" alt="PHYTOCCI">
+          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fclimate.esa.int%2Fen%2Fprojects%2Focean-colour%2F/large/" class="brc-img" alt="PHYTO-CCI ESA ocean colour project" loading="lazy">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-s">Science</span></div>
           <h3>PHYTOCCI</h3>
           <p>WP4 Lead on validation of phytoplankton Essential Climate Variables. European Space Agency project focused on merging multi-sensor ocean colour datasets to monitor global phytoplankton and climate impacts.</p>
-          <div class="br-links"><a href="https://climate.esa.int/en/projects/ocean-colour/" target="_blank" class="brl">Learn more →</a></div>
+          <div class="br-links"><a href="https://climate.esa.int/en/projects/ocean-colour/" target="_blank" rel="noopener" class="brl">Learn more →</a></div>
         </div>
       </div>
       
       <div class="brc rv rv-d1">
         <div class="brc-img-wrap">
-          <img src="ObsSea4Clim.png" class="brc-img" alt="ObsSea4Clim">
+          <img src="ObsSea4Clim.png" class="brc-img" alt="ObsSea4Clim — marine heatwave observation project" loading="lazy">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-s">Observation</span></div>
           <h3>ObsSea4Clim</h3>
           <p>Leader for MHW Definitions dataset and production >15Tb of daily MHW data under varying definitions. Improving ocean observing systems to deliver better data for climate modeling, forecasting, and marine ecosystem management.</p>
-          <div class="br-links"><a href="https://obssea4clim.eu/" target="_blank" class="brl">Learn more →</a></div>
+          <div class="br-links"><a href="https://obssea4clim.eu/" target="_blank" rel="noopener" class="brl">Learn more →</a></div>
         </div>
       </div>
       
       <div class="brc rv rv-d2">
         <div class="brc-img-wrap">
-          <img src="Klimaatlas.jpg" class="brc-img" alt="C3S RETROKLIM / Klimaatlas">
+          <img src="Klimaatlas.jpg" class="brc-img" alt="DMI Klimaatlas — C3S RETROKLIM project" loading="lazy">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-t">ML/Data</span></div>
           <h3>C3S (RETROKLIM)</h3>
           <p>Extending the CERRA regional reanalysis back to ~1901 using diffusion-based consistency models. Funded by the Copernicus Climate Change Service, and integraing into Denmark's Klimaatlas project, aiding the Danish public understand climate change.</p>
-          <div class="br-links"><a href="https://www.dmi.dk/klimaatlas" target="_blank" class="brl">Learn more (Klimaatlas) →</a></div>
+          <div class="br-links"><a href="https://www.dmi.dk/klimaatlas" target="_blank" rel="noopener" class="brl">Learn more (Klimaatlas) →</a></div>
         </div>
       </div>
       
       <div class="brc rv">
         <div class="brc-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Famap.no%2F/large/" class="brc-img" alt="AMAP 2026">
+          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Famap.no%2F/large/" class="brc-img" alt="AMAP 2026 Arctic Marine Heatwaves assessment" loading="lazy">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-p">Policy</span></div>
           <h3>AMAP 2026</h3>
           <p>Coordinating the Arctic Marine Heatwaves assessment chapter, synthesising physics, ecology, and social science into policy narratives for the Arctic Council.</p>
-          <div class="br-links"><a href="https://amap.no/" target="_blank" class="brl">Learn more →</a></div>
+          <div class="br-links"><a href="https://amap.no/" target="_blank" rel="noopener" class="brl">Learn more →</a></div>
         </div>
       </div>
       
       <div class="brc rv rv-d1">
         <div class="brc-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Ffoccus-project.eu%2F/large/" class="brc-img" alt="FOCCUS">
+          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Ffoccus-project.eu%2F/large/" class="brc-img" alt="FOCCUS — Forecasting Ocean Consortium" loading="lazy">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-s">Science</span></div>
           <h3>FOCCUS</h3>
           <p>SST fiducial reference measurements. Forecasting Ocean Consortium advancing coastal ocean forecasting capabilities by integrating satellite earth observation data with modeling.</p>
-          <div class="br-links"><a href="https://foccus-project.eu/" target="_blank" class="brl">Learn more →</a></div>
+          <div class="br-links"><a href="https://foccus-project.eu/" target="_blank" rel="noopener" class="brl">Learn more →</a></div>
         </div>
       </div>
       
       <div class="brc rv rv-d2">
         <div class="brc-img-wrap">
-          <img src="https://s0.wp.com/mshots/v1/http://www.phytoclass.org?w=600" class="brc-img" alt="phytoclass">
+          <img src="https://s0.wp.com/mshots/v1/http://www.phytoclass.org?w=600" class="brc-img" alt="phytoclass — chemotaxonomic tool for phytoplankton" loading="lazy">
         </div>
         <div class="brc-content">
           <div class="brt"><span class="tag-t">Tool</span></div>
           <h3>phytoclass</h3>
           <p>Open-source chemotaxonomic tool for deriving phytoplankton community composition from pigment data. Adopted internationally.</p>
           <div class="br-links">
-            <a href="https://cran.r-project.org/web/packages/phytoclass/index.html" target="_blank" class="brl">View on CRAN ↗</a>
-            <a href="http://www.phytoclass.org" target="_blank" class="brl">View GUI at www.phytoclass.org ↗</a>
+            <a href="https://cran.r-project.org/web/packages/phytoclass/index.html" target="_blank" rel="noopener" class="brl">View on CRAN ↗</a>
+            <a href="http://www.phytoclass.org" target="_blank" rel="noopener" class="brl">View GUI at www.phytoclass.org ↗</a>
           </div>
         </div>
       </div>
@@ -712,17 +878,103 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
   </svg>
 </div>
 
+<section id="publications">
+  <div class="ct">
+    <div class="sh rv">
+      <div class="sn">03 — Publications</div>
+      <h2 class="st">Selected Publications</h2>
+      <p class="ss">First-author and selected collaborative work across Antarctic and Arctic marine ecology, satellite observation, and climate data methods.</p>
+    </div>
+
+    <div class="pub-list rv">
+
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-year">2025</span>
+          <span>Nature<br>Climate Change</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://doi.org/10.1038/s41558-025-02379-x" target="_blank" rel="noopener">Antarctic phytoplankton communities restructure under shifting sea-ice regimes</a></h3>
+          <div class="pub-authors"><strong>Hayward, A.</strong>, Wright, S. W., Carroll, D., Law, C. S., Wongpan, P., Gutiérrez-Rodríguez, A., &amp; Pinkerton, M. H.</div>
+          <div class="pub-venue"><em>Nature Climate Change</em>, 15, 889–896. <a href="https://doi.org/10.1038/s41558-025-02379-x" target="_blank" rel="noopener">doi:10.1038/s41558-025-02379-x</a></div>
+        </div>
+      </article>
+
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-year">2024</span>
+          <span>Comms Earth<br>&amp; Environment</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://doi.org/10.1038/s43247-024-01261-6" target="_blank" rel="noopener">Twenty-six years of phytoplankton pigments reveal a circumpolar Class Divide around the Southern Ocean</a></h3>
+          <div class="pub-authors"><strong>Hayward, A.</strong>, Pinkerton, M. H., Wright, S. W., Gutiérrez-Rodríguez, A., &amp; Law, C. S.</div>
+          <div class="pub-venue"><em>Communications Earth &amp; Environment</em>. <a href="https://doi.org/10.1038/s43247-024-01261-6" target="_blank" rel="noopener">doi:10.1038/s43247-024-01261-6</a></div>
+        </div>
+      </article>
+
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-year">2026</span>
+          <span>L&amp;O Bulletin</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://doi.org/10.1002/lob.70012" target="_blank" rel="noopener">Phytoclass, Now with a GUI: Point-and-Click Pigment Chemotaxonomy</a></h3>
+          <div class="pub-authors"><strong>Hayward, A.</strong>, Murray, T., Di Geronimo, S., Wright, S. W., Westwood, K., Khan, M. A., et al.</div>
+          <div class="pub-venue"><em>Limnology and Oceanography Bulletin</em>. <a href="https://doi.org/10.1002/lob.70012" target="_blank" rel="noopener">doi:10.1002/lob.70012</a></div>
+        </div>
+      </article>
+
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-year">2023</span>
+          <span>L&amp;O Methods</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://doi.org/10.1002/lom3.10541" target="_blank" rel="noopener">phytoclass: a pigment-based chemotaxonomic method to determine the biomass of phytoplankton classes</a></h3>
+          <div class="pub-authors"><strong>Hayward, A.</strong>, Pinkerton, M. H., &amp; Gutiérrez-Rodríguez, A.</div>
+          <div class="pub-venue"><em>Limnology and Oceanography: Methods</em>, 21, 220–241. <a href="https://doi.org/10.1002/lom3.10541" target="_blank" rel="noopener">doi:10.1002/lom3.10541</a></div>
+        </div>
+      </article>
+
+      <article class="pub-item">
+        <div class="pub-meta">
+          <span class="pub-year">2021</span>
+          <span>J. Marine<br>Systems</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://doi.org/10.1016/j.jmarsys.2021.103576" target="_blank" rel="noopener">Estimating variability and long-term change in sea ice primary productivity using a satellite-based light penetration index</a></h3>
+          <div class="pub-authors">Pinkerton, M. H., &amp; <strong>Hayward, A.</strong></div>
+          <div class="pub-venue"><em>Journal of Marine Systems</em>, 221, 103576. <a href="https://doi.org/10.1016/j.jmarsys.2021.103576" target="_blank" rel="noopener">doi:10.1016/j.jmarsys.2021.103576</a></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="pub-footer rv rv-d1">
+      <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn-p">View all on Google Scholar ↗</a>
+      <a href="https://orcid.org/0000-0002-8818-2886" target="_blank" rel="noopener" class="btn btn-g">ORCID Profile ↗</a>
+    </div>
+  </div>
+</section>
+
+<div class="dv">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 30 C180 18, 360 42, 540 28 C720 14, 900 38, 1080 24 C1260 10, 1380 36, 1440 30" stroke="var(--topo)" stroke-width="1" fill="none" opacity="0.45"/>
+    <path d="M0 36 C240 48, 480 24, 720 36 C960 48, 1200 24, 1440 34" stroke="var(--bd)" stroke-width="1" fill="none" opacity="0.3"/>
+  </svg>
+</div>
+
 <section id="press">
   <div class="ct">
     <div class="sh rv">
-      <div class="sn">03 — Press</div>
+      <div class="sn">04 — Press</div>
       <h2 class="st">Communications & Press</h2>
       <p class="ss">Public engagement, featured articles, and media coverage of my scientific work.</p>
     </div>
 
     <div class="video-wrapper rv">
       <div class="video-container">
-        <iframe src="https://player.vimeo.com/video/441272709?color=2e7d9b&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/441272709?color=2e7d9b&title=0&byline=0&portrait=0" title="Alex Hayward research video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     
@@ -730,44 +982,44 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
       
       <div class="pr-card">
         <div class="pr-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fpolitiken.dk%2Fklima%2Fart10492182%2FForskere-Havets-CO2-pumpe-er-i-fare-ved-Antarktis/large/" alt="Politiken Feature" class="pr-img">
+          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fpolitiken.dk%2Fklima%2Fart10492182%2FForskere-Havets-CO2-pumpe-er-i-fare-ved-Antarktis/large/" alt="Politiken feature on Antarctic CO2 pump research" class="pr-img" loading="lazy">
         </div>
         <div class="pr-content">
           <span class="pr-tp pr">Feature</span>
-          <div class="pr-tt"><a href="https://politiken.dk/klima/art10492182/Forskere-Havets-CO2-pumpe-er-i-fare-ved-Antarktis" target="_blank">Forskere: Havets CO2-pumpe er i fare ved Antarktis ↗</a></div>
+          <div class="pr-tt"><a href="https://politiken.dk/klima/art10492182/Forskere-Havets-CO2-pumpe-er-i-fare-ved-Antarktis" target="_blank" rel="noopener">Forskere: Havets CO2-pumpe er i fare ved Antarktis ↗</a></div>
           <div class="pr-dt">Featured coverage in Denmark's Politiken discussing the delicate state of the ocean's CO2 pump in the Antarctic.</div>
         </div>
       </div>
       
       <div class="pr-card">
         <div class="pr-img-wrap">
-          <img src="https://s0.wp.com/mshots/v1/https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Tracking_the_climate-driven_shift_in_Antarctic_plankton_from_space?w=600" alt="ESA Article" class="pr-img">
+          <img src="https://s0.wp.com/mshots/v1/https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Tracking_the_climate-driven_shift_in_Antarctic_plankton_from_space?w=600" alt="ESA article on Antarctic plankton tracking" class="pr-img" loading="lazy">
         </div>
         <div class="pr-content">
           <span class="pr-tp pr">Article</span>
-          <div class="pr-tt"><a href="https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Tracking_the_climate-driven_shift_in_Antarctic_plankton_from_space" target="_blank">Tracking the climate-driven shift in Antarctic plankton from space ↗</a></div>
+          <div class="pr-tt"><a href="https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Tracking_the_climate-driven_shift_in_Antarctic_plankton_from_space" target="_blank" rel="noopener">Tracking the climate-driven shift in Antarctic plankton from space ↗</a></div>
           <div class="pr-dt">European Space Agency (ESA) deep-dive feature on tracking vital ecological shifts using satellite data.</div>
         </div>
       </div>
       
       <div class="pr-card">
         <div class="pr-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fniwa.co.nz%2Fantarctica%2F2021-antarctic-voyage%2Fmessage-bottle-alexander-hayward-marine-biogeochemist/large/" alt="NIWA Profile" class="pr-img">
+          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fniwa.co.nz%2Fantarctica%2F2021-antarctic-voyage%2Fmessage-bottle-alexander-hayward-marine-biogeochemist/large/" alt="NIWA profile of Alexander Hayward, marine biogeochemist" class="pr-img" loading="lazy">
         </div>
         <div class="pr-content">
           <span class="pr-tp tk">Profile</span>
-          <div class="pr-tt"><a href="https://niwa.co.nz/antarctica/2021-antarctic-voyage/message-bottle-alexander-hayward-marine-biogeochemist" target="_blank">Message in a bottle: Alexander Hayward ↗</a></div>
+          <div class="pr-tt"><a href="https://niwa.co.nz/antarctica/2021-antarctic-voyage/message-bottle-alexander-hayward-marine-biogeochemist" target="_blank" rel="noopener">Message in a bottle: Alexander Hayward ↗</a></div>
           <div class="pr-dt">A scientific profile published by NIWA highlighting marine biogeochemistry during the 2021 Antarctic voyage.</div>
         </div>
       </div>
 
       <div class="pr-card">
         <div class="pr-img-wrap">
-          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fniwa.co.nz%2Fcoasts%2Fmaking-waves%2Fmaking-waves-sep-2020%2Fpost-eruption-changes/large/" alt="NIWA Making Waves" class="pr-img">
+          <img src="https://v1.opengraph.11ty.dev/https%3A%2F%2Fniwa.co.nz%2Fcoasts%2Fmaking-waves%2Fmaking-waves-sep-2020%2Fpost-eruption-changes/large/" alt="NIWA Making Waves — post-eruption ecological changes" class="pr-img" loading="lazy">
         </div>
         <div class="pr-content">
           <span class="pr-tp rp">Publication</span>
-          <div class="pr-tt"><a href="https://niwa.co.nz/coasts/making-waves/making-waves-sep-2020/post-eruption-changes" target="_blank">Post-eruption changes — Making Waves ↗</a></div>
+          <div class="pr-tt"><a href="https://niwa.co.nz/coasts/making-waves/making-waves-sep-2020/post-eruption-changes" target="_blank" rel="noopener">Post-eruption changes — Making Waves ↗</a></div>
           <div class="pr-dt">Contributions and ecological insights featured in NIWA's Making Waves coastal newsletter.</div>
         </div>
       </div>
@@ -786,20 +1038,20 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 <section id="about">
   <div class="ct">
     <div class="sh rv">
-      <div class="sn">04 — About</div>
+      <div class="sn">05 — About</div>
       <h2 class="st">Background & Research</h2>
     </div>
     <div class="ab-lay">
       <div class="rv">
-        <p class="ab-bio">I'm an earth system scientist and photographer based in <strong>Copenhagen</strong>, working in the Satellites & Arctic Division at the <strong>Danish Meteorological Institute</strong>. My research spans satellite Earth observation, Arctic marine heatwaves, climate downscaling via machine learning, and polar primary production.</p>
-        <p class="ab-bio">I hold a <strong>PhD in Marine Sciences</strong> from the University of Otago, New Zealand, and an <strong>MSci in Earth Sciences</strong> from UCL. I have fieldwork experience in both Antarctica and the Arctic — from the Ross Sea and Southern Ocean to the Central Arctic and Qaanaaq, Greenland. I developed the <a href="https://cran.r-project.org/web/packages/phytoclass/index.html" target="_blank">phytoclass</a> tool and have authored 18 peer-reviewed publications including a first-author paper in <em>Nature Climate Change</em>.</p>
+        <p class="ab-bio">I'm <strong>Dr Alex Hayward</strong> (also known as Alexander Hayward) — an Earth system scientist and photographer based in <strong>Copenhagen</strong>. I work in the Satellites &amp; Arctic Division at the <strong>Danish Meteorological Institute (DMI)</strong>, where my research spans satellite Earth observation, Arctic marine heatwaves, climate downscaling via machine learning, and polar primary production.</p>
+        <p class="ab-bio">I hold a <strong>PhD in Marine Sciences</strong> from the University of Otago, New Zealand, and an <strong>MSci in Earth Sciences</strong> from UCL. I have fieldwork experience in both Antarctica and the Arctic — from the Ross Sea and Southern Ocean to the Central Arctic and Qaanaaq, Greenland. I developed the <a href="https://cran.r-project.org/web/packages/phytoclass/index.html" target="_blank" rel="noopener">phytoclass</a> tool and have authored 18 peer-reviewed publications including a first-author paper in <em>Nature Climate Change</em>.</p>
         <p class="ab-bio">Photography isn't separate from the science — it comes from the same instinct to look carefully at the world. I photograph the places I work in and the changes I study.</p>
         
         <div class="ab-links">
-          <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank">Google Scholar ↗</a>
-          <a href="https://orcid.org/0000-0002-8818-2886" target="_blank">ORCID ↗</a>
-          <a href="https://www.researchgate.net/profile/Alexander-Hayward-4" target="_blank">ResearchGate ↗</a>
-          <a href="https://www.linkedin.com/in/alexander-hayward-1b2a69162/" target="_blank">LinkedIn ↗</a>
+          <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a href="https://orcid.org/0000-0002-8818-2886" target="_blank" rel="noopener">ORCID ↗</a>
+          <a href="https://www.researchgate.net/profile/Alexander-Hayward-4" target="_blank" rel="noopener">ResearchGate ↗</a>
+          <a href="https://www.linkedin.com/in/alexander-hayward-1b2a69162/" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
 
         <div class="cv-wrap rv rv-d1">
@@ -814,7 +1066,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
         <div class="mt">
           <div class="mt-e">
             <div class="mt-d">2024 – Present</div>
-            <div><div class="mt-r">Earth System Scientist</div><div class="mt-o">DMI — Satellites & Arctic Division</div></div>
+            <div><div class="mt-r">Earth System Scientist</div><div class="mt-o">DMI — Satellites &amp; Arctic Division</div></div>
           </div>
           <div class="mt-e">
             <div class="mt-d">2023 – 2024</div>
@@ -838,7 +1090,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
           </div>
           <div class="mt-e">
             <div class="mt-d">2020</div>
-            <div><div class="mt-r">Whakaari Island & Subtropical Pacific</div><div class="mt-o">Marine and coastal surveys</div></div>
+            <div><div class="mt-r">Whakaari Island &amp; Subtropical Pacific</div><div class="mt-o">Marine and coastal surveys</div></div>
           </div>
           <div class="mt-e">
             <div class="mt-d">2018</div>
@@ -860,7 +1112,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
 <section id="contact">
   <div class="ct">
     <div class="sh rv">
-      <div class="sn">05 — Contact</div>
+      <div class="sn">06 — Contact</div>
       <h2 class="st">Get in Touch</h2>
     </div>
     <div class="co-lay rv">
@@ -872,7 +1124,7 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
         </div>
         <div class="co-b">
           <div class="co-lb">Phone</div>
-          <div class="co-v">+45 20 21 87 77</div>
+          <div class="co-v"><a href="tel:+4520218777">+45 20 21 87 77</a></div>
         </div>
         <div class="co-b">
           <div class="co-lb">Affiliation</div>
@@ -881,10 +1133,10 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
         <div class="co-b">
           <div class="co-lb">Profiles</div>
           <div class="co-v">
-            <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank">Scholar</a> ·
-            <a href="https://orcid.org/0000-0002-8818-2886" target="_blank">ORCID</a> ·
-            <a href="https://www.researchgate.net/profile/Alexander-Hayward-4" target="_blank">ResearchGate</a> ·
-            <a href="https://www.linkedin.com/in/alexander-hayward-1b2a69162/" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a> ·
+            <a href="https://orcid.org/0000-0002-8818-2886" target="_blank" rel="noopener">ORCID</a> ·
+            <a href="https://www.researchgate.net/profile/Alexander-Hayward-4" target="_blank" rel="noopener">ResearchGate</a> ·
+            <a href="https://www.linkedin.com/in/alexander-hayward-1b2a69162/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -903,13 +1155,13 @@ footer{border-top:1px solid var(--bd);padding:3rem 3rem;background:var(--bg2)}
     <div>
       <span class="ft-c">&copy; 2026 Alex Hayward</span>
       <div class="ft-license">
-        Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0 (Attribution-NonCommercial-NoDerivatives)</a>
+        Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0 (Attribution-NonCommercial-NoDerivatives)</a>
       </div>
     </div>
     <div class="ft-l">
-      <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank">Scholar</a>
-      <a href="https://orcid.org/0000-0002-8818-2886" target="_blank">ORCID</a>
-      <a href="https://www.linkedin.com/in/alexander-hayward-1b2a69162/" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=kEgz2sEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://orcid.org/0000-0002-8818-2886" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://www.linkedin.com/in/alexander-hayward-1b2a69162/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </footer>
